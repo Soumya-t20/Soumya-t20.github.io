@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This project highlights my experien
 
 ## 🌐 Live Website
 
-Visit my portfolio at: [https://yourportfolio.com](https://yourportfolio.com) *(Replace with your actual portfolio link)*
+Visit my portfolio at: [https://soumya-t20.github.io/](https://soumya-t20.github.io/) *(Replace with your actual portfolio link)*
 
 ## 🧑‍💻 About Me
 
@@ -61,6 +61,6 @@ I’m particularly excited about how AI can transform industries. My interests i
 
 - **Email**: [anthonymarythalapaneni@gmail.com](mailto:anthonymarythalapaneni@gmail.com)
 - **LinkedIn**: [anthonymarythalapaneni](https://www.linkedin.com/in/thalapaneni)
-- **GitHub**: [yourgithubusername](https://github.com/yourgithubusername)
+- **GitHub**: [yourgithubusername](https://github.com/Soumya-t20)
 
 Feel free to reach out if you'd like to discuss potential opportunities or collaborations in software development, cloud computing, or AI!
