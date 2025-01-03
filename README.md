@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This project highlights my experien
 
 ## 🌐 Live Website
 
-Visit my portfolio at: [https://soumya-t20.github.io/](https://soumya-t20.github.io/) *(Replace with your actual portfolio link)*
+Visit my portfolio at: [https://soumya-t20.github.io/](https://soumya-t20.github.io/) 
 
 ## 🧑‍💻 About Me
 
