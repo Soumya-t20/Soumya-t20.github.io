@@ -97,7 +97,7 @@ const projects = [
     
     {
         id: 'Web-App',
-        title: 'StackConnect: Full-Stack Web Application',
+        title: 'Full-Stack Web Application',
         date: 'Sep 2023 - Dec 2023',
         institution: 'George Mason University',
         description: 'Built a full-stack application using Angular and Spring Boot for seamless data processing and presentation.',
