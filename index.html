@@ -1,165 +1,406 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap CSS Framwork access-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio website of Mary Ashwitha Gopu showcasing projects, skills, and experience in computer science.">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Mary Ashwitha Gopu - Portfolio</title>
 </head>
-<body class="w3-light-grey">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXB88G5CQN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-
-    <!-- Left Column -->
-    <div class="w3-third">
-
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="/images/img.jpeg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Anthony Mary Thalapaneni</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Virginia, USA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>athalapa@gmu.edu</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+1 (571) 587 XXXX</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b></p>
-          <p>Spring MVC</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:75%">90%</div>
-          </div>
-          <p>Java </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+  gtag('config', 'G-WXB88G5CQN');
+</script>
+    
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="w3-bar fixed w-full z-10 top-0">
+                <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-white text-lg font-bold">Mary Ashwitha Gopu</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">ABOUT</a>
+                        <a href="#workex"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">WORK
+                            EXPERIENCE</a>
+                        <a href="#projects"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">PROJECTS</a>
+                        <a href="#education"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">EDUCATION</a>
+                        <a href="#skills"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SKILLS</a>
+                            <a href="#certifications"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CERTIFICATIONS</a>
+                            <a href="#leadership"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">LEADERSHIP</a>
+                        <a href="#awards"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">AWARDS</a>
+                        <a href="#contact"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACT</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <p>Javascript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:75%">75%</div>
-          </div>
-          <p>My SQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">80%</div>
-          </div>
-          <p>AWS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:60%">60%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
-          </div>
-          <p>Telugu</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-orange" style="height:24px;width:70%"></div>
-          </div>
-          <br>
         </div>
-      </div><br>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <p><i class="fa fa-external-link fa-fw w3-margin-right w3-large-bold w3-text-indigo"></i><a href="/st_csinfo.html">CS Department Information page</a></p>
-      </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <p><i class="fa fa-external-link fa-fw w3-margin-right w3-large-bold w3-text-indigo"></i><a href="/tsa_cs_survey.html">CS Department Survey Form</a></p>
-      </div>
-      <!-- End Left Column -->
+    </nav>
+
+    <!-- Home -->
+    <header class="bg-gray-900 text-white h-screen flex flex-col items-center justify-center" id="home">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">MARY ASHWITHA GOPU</h1>
+        <p class="text-xl md:text-2xl">Software Engineer</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/4 md:pr-8 mb-8 md:mb-0 text-center md:text-left">
+                    <img src="Photograph.jpg" alt="Mary Ashwitha Gopu's profile picture" class="rounded-full shadow-lg w-41 h-50 mx-auto md:mx-0 mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                </div>
+                <div class="md:w-3/4 md:pl-8">
+                    <p class="text-lg mb-4">My journey in Computer Science, which began with a simple "Hello World" program, has evolved into a passionate pursuit of creating impactful enterprise software solutions. As a recent graduate from George Mason University with a perfect 4.0 GPA, I've transformed my enthusiasm for technology into practical expertise.</p>
+                    <p class="text-lg mb-4">During my time at Verint Systems as part of the Algorithmics Team, I tackled complex challenges in cloud infrastructure and DevOps, optimizing Ansible scripts for forecasting and scheduling software. One of my proudest achievements was collaborating on the integration of DataDog monitoring and OpsGenie incident routing, which significantly enhanced our system's alarm generation capabilities and improved overall performance.</p>
+                    <p class="text-lg mb-4">As a Graduate Teaching Assistant at GMU, I had the privilege of guiding over 200 students through the intricacies of modern web development using Angular, React, and Tableau. This experience not only sharpened my technical skills but also revealed my passion for making complex concepts accessible and practical. While my technical toolkit spans Java, Python, and JavaScript, I believe my real strength lies in using these tools to solve real-world problems that make a difference.</p>
+                    <p class="text-lg mb-4">Having completed my Master's degree, I'm now ready to bring my blend of technical expertise, collaborative spirit, and innovative thinking to a full-time software engineering role. I'm particularly excited about joining a dynamic team where I can contribute to meaningful projects while continuing to grow and learn. Let's connect and explore how we can create impactful solutions together!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work Experience Section -->
+    <section class="py-20 bg-gray-100" id="workex">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Software Engineer Intern</h3>
+                    <p class="text-gray-600">May 2024 - Dec 2024</p>
+                    <p class="text-gray-600">Verint Systems - Algorithmics, R & D, Remote</p>
+                    <p>Working with Verint's Algorithmics Team in R&D, I focused on optimizing cloud infrastructure and enhancing deployment processes. My journey here challenged me to think creatively about DevOps solutions while delivering tangible business impact. A major highlight was leading the development of an AI-powered Interaction Wrap-Up Bot, which secured first place in the intern project competition.
+</p><p></p><b>Key Achievements:</b>
+</p>
+                    <ul class="list-disc list-inside mt-4">
+                        <li>Restructured the Harness CI/CD pipeline by crafting custom YAML scripts and implementing automated checks, achieving a remarkable 50% reduction in deployment time
+</li>
+                        <li>Enhanced system reliability by integrating DataDog monitoring with OpsGenie alerts, implementing a new Java logging method that achieved real-time failure detection with 90% test coverage
+</li>
+                        <li>Optimized deployment processes by improving Ansible scripts with environment checks, significantly reducing cloud resource utilization across AWS and GCP platforms
+</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Graduate Teaching Assistant</h3>
+                    <p class="text-gray-600">Aug 2023 - Dec 2024</p>
+                    <p class="text-gray-600">George Mason University - Business School, Fairfax, Virginia</p>
+                    <p>As a GTA in the School of Business, I had the privilege of shaping the next generation of developers while deepening my own understanding of modern web technologies. This role allowed me to combine my technical expertise with my passion for making complex concepts accessible.
+</p><p><b>Key Impacts:</b></p>
+                    <ul class="list-disc list-inside mt-4">
+                        <li>Introduced over 200 students to React, enabling them to build responsive web applications and understand modern development practices
+</li>
+                        <li>Led 8 Agile group projects, resulting in a 20% improvement in project completion rates through effective mentoring and guidance
+</li>
+                        <li>Fostered adoption of industry-standard frameworks, preparing students for real-world development challenges
+
+</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold">Associate Analyst</h3>
+                    <p class="text-gray-600">Sep 2022 - Nov 2022</p>
+                    <p class="text-gray-600">Jade Global, Hyderabad, India</p>
+                    <p>At Jade Global, I focused on streamlining operations through automation and real-time monitoring solutions. This role provided valuable experience in full-stack development and business process optimization.
+</p><p><b>Key Contributions:</b></p>
+                    <ul class="list-disc list-inside mt-4">
+                        <li>Developed 8 RESTful APIs using Express.js and MongoDB that automated key business processes, leading to a 25% increase in team productivity
+</li>
+                        <li>Created a real-time KPI monitoring dashboard using React and Node.js that tracked 12 crucial business metrics, reducing decision response time by 30%
+</li>
+                        <li>Integrated JIRA for enhanced project tracking and resource management, significantly improving team collaboration
+
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section class="py-20 bg-white" id="projects">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
+            <!-- Project cards will be dynamically inserted here -->
+        </div>
     </div>
-    <!-- Right Column -->
-    <div class="w3-twothird">
+</section>
 
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>SAP Commerce Cloud Developer / Honeywell Process Solutions, India</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - July 2022 </h6>
-          <p>During this time, I was involved in various aspects of SAP Commerce website development. I contributed to the creation of webpages with a focus on delivering a seamless user experience. My responsibilities included tackling challenges related to design and functionality. I worked on enhancing the overall user interface and ensuring a smooth flow of information on the website. Additionally, I addressed issues related to code and implemented solutions to improve the website's performance </p>
-          <hr>
+<!-- Project Modal -->
+<div id="project-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" style="display: none;">
+    <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white">
+        <div class="mt-3 text-center">
+            <h3 id="modal-title" class="text-2xl leading-6 font-medium text-gray-900"></h3>
+            <p id="modal-date" class="text-sm text-gray-500 mt-2"></p>
+            <div class="mt-4 text-left">
+                <ul id="modal-details" class="list-disc list-inside text-sm text-gray-600"></ul>
+                <p id="modal-skills" class="text-sm text-gray-600 mt-4"></p>
+            </div>
+            <div class="items-center px-4 py-3">
+                <button id="modal-close" class="px-4 py-2 bg-gray-800 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                    Close
+                </button>
+            </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Apprenticeship / NTT DATA, India</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Nov 2021</h6>
-          <p>In my stint at NTT DATA, I was deeply involved in web development tasks. This included developing custom tables in the database and establishing relations between different item types. I successfully executed B2C recipe installations and undertook the setup of the web development environment, actively participating in debugging processes.
-
-            My responsibilities extended to writing impex scripts from HAC, facilitating changes and updates in the database. I implemented various functionalities from the BackOffice and worked on the Web Content Management System. Additionally, I conducted Solr Indexing and gained familiarity with the workings of the Solr search engine in the web development environment</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Peer Mentor / Orientation Leader / Cultural Liaison | Fairfax, Virginia, United States</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>In my role as a Peer Mentor, I've been actively engaged in providing support and guidance to my peers for the past 7 months. Simultaneously, during my 4-month tenure as an Orientation Leader at George Mason University, I developed cross-cultural skills and fostered personal growth among new students. This experience significantly enhanced my leadership, communication, and global perspective, positively contributing to the international student community.
-
-            Currently, as a Cultural Liaison with INTO University Partnerships, I bring my experience as a cultural adjustment facilitator and student mentor to the table. With a background in administrative support and multilingual assistance. </p><br>
-        </div>
-      </div>
-<!--      Projects -->
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-gradient w3-padding-16"><i class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Laptop Localization using Wi-Fi Network</b></h5>
-          <p> Revolutionizing laptop localization through a sophisticated Wi-Fi algorithm in 98 locations, addressing indoor GPS limitations and extending applications to security, asset tracking, and digital efficiency.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Computerization of Library Activities:</b></h5>
-          <p>Developed and deployed a cutting-edge voice-assisted web portal for Andaman College, streamlining library operations and slashing average book search time by 40%, resulting in a 25% boost in availability checks efficiency.</p>
-          <hr>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>George Mason University</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2024</h6>
-          <p>Master Degree in Computer science</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Osmania University</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelors Degree in Computer Science Engineering</p><br>
-        </div>
-      </div>
-
-      <!-- End Right Column -->
     </div>
-
-    <!-- End Grid -->
-  </div>
-
-  <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-indigo w3-center w3-margin-top">
-  <p>Powered by Thalapaneni<img src="/images/mason-logo_0.png" alt="logo" style="float:right;width:250px;height:150px;">
-  </p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Education Section -->
+<section class="py-20 bg-gray-100" id="education">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 ">Education</h2>
+        <div class="flex flex-col md:flex-row md:space-x-4 w-full">
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-full">
+                <div class="text-left">
+                    <img src="GMU logo.png" alt="GMU Logo" class="w-84 h-24 mx-auto">
+                    <h3 class="text-2xl font-bold">Master of Computer Science</h3>
+                    <p class="text-gray-600">George Mason University, Fairfax, Virginia</p>
+                    <p class="text-gray-600">CGPA: 4.0/4.0</p>
+                    <p class="text-gray-600">Jan 2023 - Dec 2024 (Expected)</p>
+                    <p class="text-gray-600 mt-2"><strong>Anticipated Achievements:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Software Engineering Graduate Certificate</li>
+                        <li>Outstanding Academic Achievement recognition for maintaining 4.0 GPA</li>
+                    </ul>
+                    <p class="text-gray-600 mt-4"><strong>Relevant Coursework:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Advanced Natural Language Processing(NLP)</li>
+                        <li>Theory/Application Data Mining</li>
+                        <li>Analysis of Algorithms I</li>
+                        <li>Software Engineering for WWW</li>
+                        <li>Component-Based Software Development</li>
+                        <li>Software Engineering - Real Time Embedded Systems</li>
+                        <li>Computer Systems and Systems Programming</li>
+                        <li>Mathematical Foundations of CS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-4 w-full">
+                <div class="text-left">
+                    <div class="flex justify-center space-x-4">
+                        <img src="KMIT logo.jpg" alt="KMIT Logo" class="w-24 h-24">
+                        <img src="JNTUH logo.jpg" alt="JNTU Logo" class="w-24 h-24">
+                    </div>
+                    <h3 class="text-2xl font-bold">B.Tech. in Computer Science</h3>
+                    <p class="text-gray-600">Jawaharlal Nehru Technological University, Hyderabad, India</p>
+                    <p class="text-gray-600">CGPA: 3.09/4.0</p>
+                    <p class="text-gray-600">Jul 2018 - Jul 2022</p>
+                    <p class="text-gray-600 mt-4"><strong>Relevant Coursework:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Python Programming</li>
+                        <li>Machine Learning</li>
+                        <li>Algorithms</li>
+                        <li>Data Structures</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Database Management Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!---Skills-->
+    <section class="py-20 bg-white" id="skills">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Skills</h2>
+            <p class="text-lg text-center mb-12">Continuously expanding my skill set through self-study and practical application in projects.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        Core Competencies
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><span class="font-semibold">Programming:</span> Python, Java, JavaScript</li>
+                        <li><span class="font-semibold">Web Development:</span> Angular, React, Spring Boot, HTML, CSS</li>
+                        <li><span class="font-semibold">Databases:</span> MySQL, MongoDB</li>
+                        <li><span class="font-semibold">Cloud Services:</span> AWS (S3, EC2, CloudFront, Route 53)</li>
+                        <li><span class="font-semibold">DevOps:</span> Docker, Git, Harness</li>
+                        <li><span class="font-semibold">Data Analysis:</span> pandas, matplotlib, seaborn</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        Familiar Technologies
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><span class="font-semibold">Programming:</span> C, SQL, XML</li>
+                        <li><span class="font-semibold">Frameworks:</span> Express.js, Node.js, Hibernate</li>
+                        <li><span class="font-semibold">Machine Learning:</span> scikit-learn, Regression models, NLP basics</li>
+                        <li><span class="font-semibold">DevOps:</span> Kubernetes, Jenkins, CI/CD pipelines</li>
+                        <li><span class="font-semibold">Mobile Development:</span> Android Development fundamentals</li>
+                        <li><span class="font-semibold">Embedded Systems:</span> Basic real-time processing, GPIO interfaces</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-100 p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    Academic Projects & Coursework
+                </h3>
+                <p class="mb-4">Through various academic projects and coursework, I've gained exposure to:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-3 rounded-lg shadow">Advanced data analysis and feature engineering</div>
+                    <div class="bg-white p-3 rounded-lg shadow">Microservices architecture and RESTful API design</div>
+                    <div class="bg-white p-3 rounded-lg shadow">Cloud-based application deployment and scaling</div>
+                    <div class="bg-white p-3 rounded-lg shadow">Basic machine learning model development</div>
+                    <div class="bg-white p-3 rounded-lg shadow">Fundamentals of embedded systems programming</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!---Certifications-->
+    <section class="py-20 bg-gray-100" id="certifications">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Google Specializations</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Google Cybersecurity Specialization</li>
+                        <li>Google Data Analytics Specialization</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Deep Learning & Neural Networks</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Deep Learning Specialization</li>
+                        <li>Convolutional Neural Networks</li>
+                        <li>Improving Deep Neural Networks</li>
+                        <li>Neural Networks and Deep Learning</li>
+                        <li>Sequence Models</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Python & Machine Learning</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Programming for Everybody (Getting Started with Python)</li>
+                        <li>Python Data Structures</li>
+                        <li>Using Python to Access Web Data</li>
+                        <li>Structuring Machine Learning Projects</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Other Certifications</h3>
+                    <ul class="list-disc list-inside">
+                        <li>JAVA SE 8 Programming - Oracle University</li>
+                        <li>NPTEL DSE (Data Science for Engineers)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership and Professional Development Section -->
+    <section class="py-20 bg-white" id="leadership">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Leadership & Professional Development</h2>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Active Leader Certification</h3>
+                <p class="text-gray-600 mb-4">George Mason University, 2023</p>
+                <ul class="list-disc list-inside">
+                    <li>Completed an intensive 10-session leadership development program focused on skills crucial for the software industry</li>
+                    <li>Identified top five strengths through StrengthsFinder assessment, including problem-solving, communication, and teamwork</li>
+                    <li>Enhanced emotional intelligence and relationship-building skills essential for effective teamwork in software development</li>
+                    <li>Developed time management and task prioritization skills critical for meeting deadlines in fast-paced tech environments</li>
+                </ul>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg mt-8">
+                <h3 class="text-2xl font-bold mb-4">Volunteer Experience</h3>
+                <h4 class="text-xl font-semibold">Street Cause Volunteer, Orphanages and Old Age Homes Division</h4>
+                <p class="text-gray-600 mb-4">Jan 2020 - Jan 2021</p>
+                <ul class="list-disc list-inside">
+                    <li>Organized fundraising campaigns to provide essential supplies to local orphanages and old age homes</li>
+                    <li>Developed project management and community outreach skills while making a positive impact on vulnerable populations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards and Honors Section -->
+    <section class="py-20 bg-gray-100" id="awards">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Awards and Honors</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">AnitaB.org Advancing Inclusion Scholarship Recipient</h3>
+                <p class="text-gray-600 mb-4">Grace Hopper Celebration 2024</p>
+                <ul class="list-disc list-inside">
+                    <li>Selected from a large pool of applicants for this prestigious scholarship</li>
+                    <li>Will attend virtual Grace Hopper Celebration from October 8-11, 2024</li>
+                    <li>Scholarship includes GHC 24 virtual registration, premium AnitaB.org Membership Benefits for 1 year, networking opportunities, and mentorship programs</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+                <h3 class="text-2xl font-bold mb-4">Professional Memberships</h3>
+                <p class="text-xl font-semibold">AnitaB.org Premium Member</p>
+                <p class="text-gray-600 mb-4">October 2024 - October 2025 (Anticipated)</p>
+                <ul class="list-disc list-inside">
+                    <li>Active participation in a global community of women and non-binary technologists</li>
+                    <li>Access to exclusive academic and technical events and resources</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
+            <div class="text-center">
+                <p class="text-lg"><i class="fa fa-envelope fa-fw mr-2"></i> Email: <a
+                        href="mailto:maryashwithagopu@gmail.com" class="text-blue-600">maryashwithagopu@gmail.com</a>
+                </p>
+                <p class="text-lg"><i class="fa fa-phone fa-fw mr-2"></i> Phone: +1 484 686 4505</p>
+                <p class="text-lg"><i class="fa fa-linkedin fa-fw mr-2"></i> LinkedIn: <a
+                        href="https://www.linkedin.com/in/mary-ashwitha-gopu" class="text-blue-600"
+                        target="_blank">mary-ashwitha-gopu</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <p>© 2024 Mary Ashwitha Gopu. All rights reserved.</p>
+        <a href="#home" class="hover:underline">To the top</a>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof initializeProjects === 'function') {
+                initializeProjects();
+            } else {
+                console.error("initializeProjects function not found. Make sure script.js is loaded correctly.");
+            }
+        });
+    </script>
 </body>
+
 </html>
