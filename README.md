@@ -61,6 +61,6 @@ I’m particularly excited about how AI can transform industries. My interests i
 
 - **Email**: [anthonymarythalapaneni@gmail.com](mailto:anthonymarythalapaneni@gmail.com)
 - **LinkedIn**: [anthonymarythalapaneni](https://www.linkedin.com/in/thalapaneni)
-- **GitHub**: [yourgithubusername](https://github.com/Soumya-t20)
+- **GitHub**: [Soumya-t20](https://github.com/Soumya-t20)
 
 Feel free to reach out if you'd like to discuss potential opportunities or collaborations in software development, cloud computing, or AI!
