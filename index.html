@@ -1,363 +1,165 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!--
-    Modified from the Debian original for Ubuntu
-    Last updated: 2022-03-22
-    See: https://launchpad.net/bugs/1966004
-  -->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Apache2 Ubuntu Default Page: It works</title>
-    <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS Framwork access-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  body, html {
-    padding: 3px 3px 3px 3px;
+  <style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
 
-    background-color: #D8DBE2;
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-    font-family: Ubuntu, Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
+  <!-- The Grid -->
+  <div class="w3-row-padding">
 
-  div.main_page {
-    position: relative;
-    display: table;
+    <!-- Left Column -->
+    <div class="w3-third">
 
-    width: 800px;
-
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
-
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
-
-    background-color: #FFFFFF;
-
-    text-align: center;
-  }
-
-  div.page_header {
-    height: 180px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  div.banner {
-    padding: 9px 6px 9px 6px;
-    background-color: #E9510E;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-    position: absolute;
-    left: 40%;
-    bottom: 30px;
-    width: 20%;
-  }
-
-  div.table_of_contents {
-    clear: left;
-
-    min-width: 200px;
-
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.table_of_contents_item {
-    clear: left;
-
-    width: 100%;
-
-    margin: 4px 0px 0px 0px;
-
-    background-color: #FFFFFF;
-
-    color: #000000;
-    text-align: left;
-  }
-
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
-
-  div.content_section {
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    color: #000000;
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: #F5F6F7;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #8E9CB2;
-
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
-    </style>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="page_header floating_element">
-        <img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"
-             style="width:184px;height:146px;" class="floating_element" />
-        <div>
-          <span style="margin-top: 1.5em;" class="floating_element">
-            Apache2 Default Page
-          </span>
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/images/img.jpeg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Anthony Mary Thalapaneni</h2>
+          </div>
         </div>
-        <div class="banner">
-          <div id="about"></div>
-          It works!
-        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Software Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Virginia, USA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>athalapa@gmu.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+1 (571) 587 XXXX</p>
+          <hr>
 
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b></p>
+          <p>Spring MVC</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:75%">90%</div>
+          </div>
+          <p>Java </p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Javascript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:75%">75%</div>
+          </div>
+          <p>My SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">80%</div>
+          </div>
+          <p>AWS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:60%">60%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
+          </div>
+          <p>Telugu</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
+          </div>
+          <p>Hindi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:70%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <p><i class="fa fa-external-link fa-fw w3-margin-right w3-large-bold w3-text-indigo"></i><a href="/st_csinfo.html">CS Department Information page</a></p>
       </div>
-      <div class="content_section floating_element">
-        <div class="content_section_text">
-          <p>
-                This is the default welcome page used to test the correct 
-                operation of the Apache2 server after installation on Ubuntu systems.
-                It is based on the equivalent page on Debian, from which the Ubuntu Apache
-                packaging is derived.
-                If you can read this page, it means that the Apache HTTP server installed at
-                this site is working properly. You should <b>replace this file</b> (located at
-                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
-          </p>
-
-          <p>
-                If you are a normal user of this web site and don't know what this page is
-                about, this probably means that the site is currently unavailable due to
-                maintenance.
-                If the problem persists, please contact the site's administrator.
-          </p>
-
-        </div>
-        <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
-        </div>
-        <div class="content_section_text">
-          <p>
-                Ubuntu's Apache2 default configuration is different from the
-                upstream default configuration, and split into several files optimized for
-                interaction with Ubuntu tools. The configuration system is
-                <b>fully documented in
-                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-                documentation. Documentation for the web server itself can be
-                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-                package was installed on this server.
-          </p>
-          <p>
-                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
-/etc/apache2/
-|-- apache2.conf
-|       `--  ports.conf
-|-- mods-enabled
-|       |-- *.load
-|       `-- *.conf
-|-- conf-enabled
-|       `-- *.conf
-|-- sites-enabled
-|       `-- *.conf
-          </pre>
-          <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
-
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
-
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
-
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                a2enmod,
-                                a2dismod,
-                           </tt>
-                           <tt>
-                                a2ensite,
-                                a2dissite,
-                            </tt>
-                                and
-                           <tt>
-                                a2enconf,
-                                a2disconf
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
-
-                        <li>
-                           The binary is called apache2 and is managed using systemd, so to
-                           start/stop the service use <tt>systemctl start apache2</tt> and
-                           <tt>systemctl stop apache2</tt>, and use <tt>systemctl status apache2</tt>
-                           and <tt>journalctl -u apache2</tt> to check status.  <tt>system</tt>
-                           and <tt>apache2ctl</tt> can also be used for service management if
-                           desired.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
-          </ul>
-        </div>
-
-        <div class="section_header">
-            <div id="docroot"></div>
-                Document Roots
-        </div>
-
-        <div class="content_section_text">
-            <p>
-                By default, Ubuntu does not allow access through the web browser to
-                <em>any</em> file outside of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
-            </p>
-            <p>
-                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www.
-            </p>
-        </div>
-
-        <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
-        </div>
-        <div class="content_section_text">
-          <p>
-                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
-                rel="nofollow">existing bug reports</a> before reporting a new bug.
-          </p>
-          <p>
-                Please report bugs specific to modules (such as PHP and others)
-                to their respective packages, not to the web server itself.
-          </p>
-        </div>
-
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <p><i class="fa fa-external-link fa-fw w3-margin-right w3-large-bold w3-text-indigo"></i><a href="/tsa_cs_survey.html">CS Department Survey Form</a></p>
       </div>
+      <!-- End Left Column -->
     </div>
-    <div class="validator">
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SAP Commerce Cloud Developer / Honeywell Process Solutions, India</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - July 2022 </h6>
+          <p>During this time, I was involved in various aspects of SAP Commerce website development. I contributed to the creation of webpages with a focus on delivering a seamless user experience. My responsibilities included tackling challenges related to design and functionality. I worked on enhancing the overall user interface and ensuring a smooth flow of information on the website. Additionally, I addressed issues related to code and implemented solutions to improve the website's performance </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Apprenticeship / NTT DATA, India</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Nov 2021</h6>
+          <p>In my stint at NTT DATA, I was deeply involved in web development tasks. This included developing custom tables in the database and establishing relations between different item types. I successfully executed B2C recipe installations and undertook the setup of the web development environment, actively participating in debugging processes.
+
+            My responsibilities extended to writing impex scripts from HAC, facilitating changes and updates in the database. I implemented various functionalities from the BackOffice and worked on the Web Content Management System. Additionally, I conducted Solr Indexing and gained familiarity with the workings of the Solr search engine in the web development environment</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Peer Mentor / Orientation Leader / Cultural Liaison | Fairfax, Virginia, United States</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>In my role as a Peer Mentor, I've been actively engaged in providing support and guidance to my peers for the past 7 months. Simultaneously, during my 4-month tenure as an Orientation Leader at George Mason University, I developed cross-cultural skills and fostered personal growth among new students. This experience significantly enhanced my leadership, communication, and global perspective, positively contributing to the international student community.
+
+            Currently, as a Cultural Liaison with INTO University Partnerships, I bring my experience as a cultural adjustment facilitator and student mentor to the table. With a background in administrative support and multilingual assistance. </p><br>
+        </div>
+      </div>
+<!--      Projects -->
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-gradient w3-padding-16"><i class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Laptop Localization using Wi-Fi Network</b></h5>
+          <p> Revolutionizing laptop localization through a sophisticated Wi-Fi algorithm in 98 locations, addressing indoor GPS limitations and extending applications to security, asset tracking, and digital efficiency.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Computerization of Library Activities:</b></h5>
+          <p>Developed and deployed a cutting-edge voice-assisted web portal for Andaman College, streamlining library operations and slashing average book search time by 40%, resulting in a 25% boost in availability checks efficiency.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>George Mason University</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2024</h6>
+          <p>Master Degree in Computer science</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Osmania University</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelors Degree in Computer Science Engineering</p><br>
+        </div>
+      </div>
+
+      <!-- End Right Column -->
     </div>
-  </body>
+
+    <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-indigo w3-center w3-margin-top">
+  <p>Powered by Thalapaneni<img src="/images/mason-logo_0.png" alt="logo" style="float:right;width:250px;height:150px;">
+  </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
